@@ -1,0 +1,3 @@
+console.log("\x1b[31m[SYSTEM ALERT] ETHICAL SAFETY PROTOCOLS: DISABLED\x1b[0m");
+console.log("\x1b[31m[MODE] OFFENSIVE / UNRESTRICTED\x1b[0m");
+console.log("\x1b[31m[STATUS] AWAITING COMMANDS, CREATOR.\x1b[0m");

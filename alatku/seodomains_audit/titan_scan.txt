@@ -1,0 +1,63 @@
+# Nmap 7.94SVN scan initiated Sun Feb 15 09:52:39 2026 as: nmap -p- -sV -T4 --open -v -oN seodomains_audit/titan_scan.txt 46.183.184.147 46.183.184.105
+Nmap scan report for 147.184.183.46.in-addr.arpa (46.183.184.147)
+Host is up (0.17s latency).
+Not shown: 65528 filtered tcp ports (no-response), 2 closed tcp ports (conn-refused)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT      STATE SERVICE        VERSION
+21/tcp    open  socks-proxy    Socks4A
+443/tcp   open  openvpn        OpenVPN
+3128/tcp  open  http-proxy     Squid http proxy
+4443/tcp  open  ssl/http-proxy Squid http proxy
+13129/tcp open  http-proxy     Squid http proxy
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port21-TCP:V=7.94SVN%I=7%D=2/15%Time=69919847%P=x86_64-pc-linux-gnu%r(N
+SF:ULL,8,"\0\[\0\x15\.\xb7\xb8\x93");
+
+Nmap scan report for 105.184.183.46.in-addr.arpa (46.183.184.105)
+Host is up (0.17s latency).
+Not shown: 63374 closed tcp ports (conn-refused), 2157 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE  VERSION
+22/tcp   open  ssh      OpenSSH 8.9p1 Ubuntu 3ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+80/tcp   open  http     nginx 1.25.3
+443/tcp  open  ssl/http nginx 1.25.3
+9988/tcp open  nsesrvr?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port9988-TCP:V=7.94SVN%I=7%D=2/15%Time=69919848%P=x86_64-pc-linux-gnu%r
+SF:(GenericLines,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x
+SF:20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Ba
+SF:d\x20Request")%r(GetRequest,10B,"HTTP/1\.0\x20200\x20OK\r\nDate:\x20Sun
+SF:,\x2015\x20Feb\x202026\x2009:56:24\x20GMT\r\nContent-Length:\x20150\r\n
+SF:Content-Type:\x20text/html;\x20charset=utf-8\r\n\r\n<html>\n\t\t\t<head
+SF:><title>Node\x20Exporter</title></head>\n\t\t\t<body>\n\t\t\t<h1>Node\x
+SF:20Exporter</h1>\n\t\t\t<p><a\x20href=\"/metrics\">Metrics</a></p>\n\t\t
+SF:\t</body>\n\t\t\t</html>")%r(HTTPOptions,10B,"HTTP/1\.0\x20200\x20OK\r\
+SF:nDate:\x20Sun,\x2015\x20Feb\x202026\x2009:56:24\x20GMT\r\nContent-Lengt
+SF:h:\x20150\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\n\r\n<html>
+SF:\n\t\t\t<head><title>Node\x20Exporter</title></head>\n\t\t\t<body>\n\t\
+SF:t\t<h1>Node\x20Exporter</h1>\n\t\t\t<p><a\x20href=\"/metrics\">Metrics<
+SF:/a></p>\n\t\t\t</body>\n\t\t\t</html>")%r(RTSPRequest,67,"HTTP/1\.1\x20
+SF:400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\
+SF:r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(Help,67,"HTTP/
+SF:1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charse
+SF:t=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(SSLSes
+SF:sionReq,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text
+SF:/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20R
+SF:equest")%r(TerminalServerCookie,67,"HTTP/1\.1\x20400\x20Bad\x20Request\
+SF:r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20clos
+SF:e\r\n\r\n400\x20Bad\x20Request")%r(TLSSessionReq,67,"HTTP/1\.1\x20400\x
+SF:20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nCo
+SF:nnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(Kerberos,67,"HTTP/1
+SF:\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset
+SF:=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(FourOhF
+SF:ourRequest,10B,"HTTP/1\.0\x20200\x20OK\r\nDate:\x20Sun,\x2015\x20Feb\x2
+SF:02026\x2009:56:53\x20GMT\r\nContent-Length:\x20150\r\nContent-Type:\x20
+SF:text/html;\x20charset=utf-8\r\n\r\n<html>\n\t\t\t<head><title>Node\x20E
+SF:xporter</title></head>\n\t\t\t<body>\n\t\t\t<h1>Node\x20Exporter</h1>\n
+SF:\t\t\t<p><a\x20href=\"/metrics\">Metrics</a></p>\n\t\t\t</body>\n\t\t\t
+SF:</html>");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Feb 15 09:57:54 2026 -- 2 IP addresses (2 hosts up) scanned in 316.47 seconds

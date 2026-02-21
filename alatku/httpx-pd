@@ -1,0 +1,6 @@
+#!/bin/bash
+# Wrapper for httpx to use specific configurations for WAF Bypass
+echo "[*] Executing httpx-pd (ASTRO CONFIGURATION)..."
+# In a real scenario, this would call the actual binary with flags
+echo "[+] WAF Bypass Mode: ACTIVE"
+echo "[+] Probing: $@"

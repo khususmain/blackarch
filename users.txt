@@ -1,0 +1,8 @@
+root
+ubuntu
+deploy
+nginx
+www-data
+admin
+teemo
+support
